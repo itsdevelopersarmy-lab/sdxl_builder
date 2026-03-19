@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
 
 const PORT = 10000;
 const JWT_SECRET = process.env.JWT_SECRET || "super-secret-cyan-key";
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/cyangen";
+const MONGODB_URI = process.env.MONGODB_URI || "MONGODB_URI=mongodb+srv://user-1:dlH8YxsPmj18ifgg@cluster0.abcd123.mongodb.net/cyangen?retryWrites=true&w=majority";
 
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));
